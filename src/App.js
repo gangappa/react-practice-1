@@ -5,6 +5,7 @@ import Forms from './components/Forms'
 import ObjectUpdate from './components/ObjectUpdate'
 import Students from './components/Students'
 import UseEffect from './components/UseEffect'
+import UseMemo from './components/UseMemo'
 
 function App() {
 	const [name, changeName] = useState("Gangappa")
@@ -63,6 +64,8 @@ function App() {
 			<hr />
 			<h2>Data from child to parent</h2>
 			<Child data={showDataFromChildToParent} />
+			<hr />
+			<UseMemo />
 		</div>
 	)
 }
